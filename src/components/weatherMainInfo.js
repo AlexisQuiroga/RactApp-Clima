@@ -4,7 +4,7 @@ export default function WeatherMainInfo({ weather }) {
 	return (
 		<div className={styles.mainInfo}>
 			<div className={styles.city}>{weather?.location.name}</div>
-			<div>{weather?.location.region}</div>
+			<div className={styles.region}>{weather?.location.region}</div>
 			<div className={styles.country}>{weather?.location.country}</div>
 			<div className={styles.row}>
 				<div>
